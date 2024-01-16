@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web</title>
+    <style>
+        table,th,td{border: 1px solid black;}
+    </style>
+</head>
+<body>
+    <!--tablas-->
+    <table>
+        <tbody>
+        <tr>
+            <th>Producto</th> 
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>Bits</td> 
+            <td>1¢</td>
+        </tr>
+        <tr>
+            <td>Chuches</td>
+            <td>3¢</td>
+
+        </tr>
+    </tbody>
+    <tfoot>
+        <td></td>
+        <td>gratis</td>
+    </tfoot>
+    </table>
+
+    <!--lista no ordenada-->
+    <ul>
+        <li>Elemento a</li>
+        <li>Elemento b</li>
+    </ul>
+    <!--lista ordenada-->
+    <ol>
+        <li value="79">Elemento a</li> <!--value es valor en el que empieza a contar-->
+        <li>Elemnto b</li>
+        <li>Elemnto c</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">subelemento 1</li>
+                <li style="list-style-type: lower-alpha;">subelemento 2</li>
+
+            </ol>
+        </li>
+    </ol>
+
+
+
+
+
+
+
+
+
+
+
+    <form action="/formulario" method="post"><!---action:a donde queremos que se envie  method:get->enviar los valores a través url post-> no se muestran url-->
+        <label for="nombre">Nombre</label>  <!--sirve para que si pulsamos en nombre nos dirige directamente al input-->
+        <input  value="viti"type="text" id="nombre" name="nombres de las personas" placeholder="Nombre"> <!-- placeholder se pone en el recuadro    name:lo que guarda el serividos type:tipo de input que es-->
+        <label for="apellido">Apellido</label>
+        <input value="maracas" id="apellido" name="apellido de la persona" placeholder="Apellido"><!-- value valor por defecto TEXT AREA NO FUNCIONA hay que escribir directamente en el contenido-->
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea id="comentario" placeholder="ingrese comentario" name="comentario"></textarea>
+        <br>
+        <input type="submit"><!--sirve para enviar los datos-->
+        <button type="button"><img src="/img/cafe.png"></button>
+        <button type="reset">Boton</button>
+        <button type="submit">Boton</button>
+         <!-- button se utilza con java reset:dejar el formulario con lso valores iniciales  submit:envia el formulario-->
+    </form>
+  
+
+    <h1>Titulo página</h1>
+    <h2>Titulo apartado</h2>
+    <h3>Subtitulo</h3>
+    <h4>Titulo 4</h4>
+    <h5>Titulo 5</h5>
+    <h6>Titulo 6</h6>
+    <p>Texto </p>
+    <hr> <!-- no hace falta cerrala es una linea-->
+    <p>Más texto  &nbsp; más aun</p> <!-- nsb sirve para poner espacions-->
+    <p>este esto es <span style="color:blue">más extenso</span> y sirve <br><br>para  mostrar la etiqueta span</p>
+    <!--- la etiqueta span es util para darle un estilo concreto con css-->
+    <a targer="_blank" href="https://www.google.com">Google</a>
+    <img src="img/cafe.png" width="100">
+
+</body>
+</html>
