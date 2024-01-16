@@ -5,19 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <header>
-        <h1>Blog de Mar</h1>
+<body>                      <!--CLASS:para seleccionar varios-->
+    <header>                <!--ID:para identificar un SOLO elemento-->
+        <h1 id="titulo">Blog de Mar</h1>
     </header><!--encabezado-->
+    <div>
+        <p>la etiqueta div sirve para divir el contenido</p>
+    </div>
     <section>
-        <article><!--funciona muy bien para separar los post de un blog-->
+        <article class="post"><!--funciona muy bien para separar los post de un blog-->
             <h2>Titulo de mi post</h2>
             <p>descripcion..</p>
-            <img src="/img/cafe.png" width="100">
+            <img src="img/emoji.jpg" width="200">
             <p>texto del artículo, es texto de prueba</p>
         </article>
+        <article class="post">
+            <h2>Titulo de mi post 2</h2>
+            <p>descripcion</p>
+            <img src="img/niña.png" width="200">
+            <p>Texto del articulo 2</p>
+        </article>
+        <article class="post">
+            <h2>Titulo post 3</h2>
+            <p> descripcion</p>
+            <img src="img/emoji.jpg" width="200">
+            <p>más texto de mi articulo 3....</p>
+        </article>
     </section><!--secciones-->
-    <footer></footer><!--pie de página-->
+    <footer>
+        <a href="#titulo">Ir al inicio</a>
+        <br>
+        <a href="mailto:martin@gmail.com">contactame aqui</a>
+        <p>Copyright 2023</p>
+    </footer><!--pie de página-->
     
 </body>
 </html>
